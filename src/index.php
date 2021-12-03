@@ -19,6 +19,6 @@
 
 <h1>Voorbeeld Unittest</h1>
 
-<h3>Het totaalbedrag van de rekening is: <?php echo $receipt->total($rekening); ?> euro</h3>
+<h3>Het totaalbedrag van de rekening is: <?php echo $receipt->total($rekening, "Hoi"); ?> euro</h3>
 
 <h3>Het productbedrag van de rekening is: <?php echo $receipt->product($rekening); ?> euro</h3>
