@@ -1,13 +1,12 @@
 <?php
   namespace TDD;
 
-  include("./receipt.php");
+  include("./kostenBenefietConcert.php");
 
-  $receipt = new Receipt();
+  $BenefietAvond = new kostenBenefietConcert();
 
-  // $rekening = array(56, 128, 89, 24, 133, 233, 212);
+  $BenefietAvond = [1200];
 
-  $rekening = [56, 128, 89, 24, 133, 233, 212, 23];
 
   echo dirname(dirname(__FILE__));
   echo "<br>";
@@ -17,8 +16,11 @@
 ?>
 
 
-<h1>Voorbeeld Unittest</h1>
+<h1>Herkansing</h1>
 
-<h3>Het totaalbedrag van de rekening is: <?php echo $receipt->total($rekening, "Hoi"); ?> euro</h3>
+<h3>Het totaalbezoekers van is: <?php echo $kostenBenefietConcert->aantal($BenefietAvond, "Hoi"); ?> euro</h3>
 
-<h3>Het productbedrag van de rekening is: <?php echo $receipt->product($rekening); ?> euro</h3>
+<h3>Het productbezoekers van is: <?php echo $kostenBenefietConcert->prijs($BenefietAvond); ?> euro</h3>
+
+<hr>
+
